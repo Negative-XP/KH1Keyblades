@@ -100,6 +100,6 @@ app.get('/kh1/:keyblade', (req, res) =>{
 }
 })
 
-app.listen(PORT,()=>{
+app.listen(process.env.PORT || PORT,()=>{
   console.log(`the server is running on port ${PORT}`)
 })
